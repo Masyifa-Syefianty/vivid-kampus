@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Unindra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Warna latar belakang */
+        }
+        .navbar {
+            background-color: #3f48cc;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .navbar img {
+            height: 60px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            transition: background-color 0.3s; /* Efek hover halus */
+        }
+        .navbar a:hover {
+            background-color:  #3f48cc;
+            border-radius: 5px; /* Membuat sudut membulat */
+        }
+        .content {
+            padding: 20px;
+        }
+        .content img {
+            width: 100%;
+            max-width: 400px; /* Adjust the size */
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px;
+            border-radius: 10px; /* Membuat gambar membulat */
+        }
+        .content h2 {
+            font-size: 26px;
+            color: #3f48cc;
+            text-align: center;
+        }
+        .content p {
+            text-align: justify;
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .text-section {
+            flex: 1;
+            min-width: 300px;
+            margin-right: 20px;
+        }
+        .image-section {
+            max-width: 400px;
+            flex: 1;
+        }
+        /* Style untuk form kontak */
+        form {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 600px;
+            margin: 20px auto;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #white;
+        }
+        input[type="submit"] {
+            background-color: #3f48cc;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #3f48cc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Bagian Navbar -->
+    <div class="navbar">
+        <div>
+            <a href="home.html">Home</a>
+            <a href="profil.html">Profil</a>
+            <a href="#">Akademik</a>
+            <a href="#">Organisasi</a>
+            <a href="kontak.html">Kontak</a>
+        </div>
+        <img src="logo.png" alt="Logo Unindra">
+    </div>
+    <!-- Form Kontak -->
+    <form action="#" method="post">
+        <h2>Ada Pertanyaan?</h2>
+        <label for="name">Name*</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">eMail*</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone*</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="country">Country*</label>
+        <select id="country" name="country" required>
+            <option value="Indonesia">Indonesia</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" ></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
